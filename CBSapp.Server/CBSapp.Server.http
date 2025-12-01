@@ -1,0 +1,6 @@
+@CBSapp.Server_HostAddress = http://localhost:5286
+
+GET {{CBSapp.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,71 @@
+
+<div class="map-wrapper">
+
+
+  <div id="map" class="map"></div>
+
+  <div class="toolbar top-right">
+    <button (click)="isaretlemeYapBasla()" title="Nokta İşaretle" class="tool-btn">Nokta</button>
+    <button (click)="uzunlukOlcmeBasla()" title="Uzunluk Ölç" class="tool-btn">Uzunluk</button>
+    <button (click)="alanOlcmeBasla()" title="Alan Ölç" class="tool-btn">Alan</button>
+    <button (click)="sil()" class="tool-btn btn-cancel">Sil</button>
+    <button (click)="parselEklemeBasla()" class="tool-btn success">Yeni Parsel</button>
+  </div>
+
+
+  <div class="sidebar-left">
+    <div class="panel-header">
+      <h3>Ada / Parsel Ara</h3>
+    </div>
+
+    <div class="panel-section">
+ 
+      <div class="search-form">
+        <input [(ngModel)]="parselPropertyleri.sehir" placeholder="Şehir" value="İstanbul">
+        <input [(ngModel)]="parselPropertyleri.ilce" placeholder="İlçe" value="Kadıköy">
+        <input [(ngModel)]="parselPropertyleri.mahalle" placeholder="Mahalle">
+        <input [(ngModel)]="parselPropertyleri.ada" placeholder="Ada No">
+        <input [(ngModel)]="parselPropertyleri.parsel" placeholder="Parsel No">
+
+        <button (click)="parselAra()"
+                [disabled]="!parselPropertyleri.ada || !parselPropertyleri.parsel"
+                class="btn-search-full">
+          Ara ve Göster
+        </button>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="modal-overlay" *ngIf="parselFormGoster">
+    <div class="modal-center">
+      <div class="modal-card">
+        <h3>Yeni Parsel Bilgileri</h3>
+        <button class="modal-close" (click)="parselIptal()">X</button>
+
+        <div class="form-grid">
+          <input [(ngModel)]="parselPropertyleri.sehir" placeholder="Şehir" value="İstanbul">
+          <input [(ngModel)]="parselPropertyleri.ilce" placeholder="İlçe" value="Kadıköy">
+          <input [(ngModel)]="parselPropertyleri.mahalle" placeholder="Mahalle">
+          <input [(ngModel)]="parselPropertyleri.ada" placeholder="Ada No" required>
+          <input [(ngModel)]="parselPropertyleri.parsel" placeholder="Parsel No"  required>
+        </div>
+
+        <div class="modal-actions">
+          <button (click)="parselIptal()" class="btn-cancel">İptal</button>
+          <button (click)="parselKaydet()"
+                  [disabled]="!parselPropertyleri.ada || !parselPropertyleri.parsel"
+                  class="btn-save">
+            Kaydet
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tooltip (ölçüm için) -->
+  <div id="tooltip" class="ol-tooltip"></div>
+</div>

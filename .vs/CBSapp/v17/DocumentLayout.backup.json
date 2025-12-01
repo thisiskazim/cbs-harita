@@ -1,0 +1,582 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\map\\map.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\map\\map.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\app.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\appRouting.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\appRouting.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\app.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|c:\\users\\kazimu\\source\\repos\\cbsapp\\cbsapp.server\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|solutionrelative:cbsapp.server\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\appsettings.example.json||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CBSapp.Server\\appsettings.example.json||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|c:\\users\\kazimu\\source\\repos\\cbsapp\\cbsapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|solutionrelative:cbsapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CBSapp.Server\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|c:\\users\\kazimu\\source\\repos\\cbsapp\\cbsapp.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|solutionrelative:cbsapp.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\map\\map.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|c:\\users\\kazimu\\source\\repos\\cbsapp\\cbsapp.server\\dtos\\measurementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|solutionrelative:cbsapp.server\\dtos\\measurementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\draw.service.ts||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\map\\Service\\draw.service.ts||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\measurement.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\map\\Service\\measurement.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\parcel.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\map\\Service\\parcel.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|c:\\users\\kazimu\\source\\repos\\cbsapp\\cbsapp.server\\controllers\\parcelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|solutionrelative:cbsapp.server\\controllers\\parcelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\app.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\map.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\map\\Service\\map.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|c:\\users\\kazimu\\source\\repos\\cbsapp\\cbsapp.server\\models\\adaparsel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|solutionrelative:cbsapp.server\\models\\adaparsel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|c:\\users\\kazimu\\source\\repos\\cbsapp\\cbsapp.server\\dtos\\adaparselekledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|solutionrelative:cbsapp.server\\dtos\\adaparselekledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|c:\\users\\kazimu\\source\\repos\\cbsapp\\cbsapp.server\\controllers\\measurementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|solutionrelative:cbsapp.server\\controllers\\measurementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\map\\map.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app-routing-module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\app-routing-module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|c:\\users\\kazimu\\source\\repos\\cbsapp\\cbsapp.server\\spa.proxy.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|solutionrelative:cbsapp.server\\spa.proxy.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app-module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cbsapp.client\\src\\app\\app-module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|c:\\users\\kazimu\\source\\repos\\cbsapp\\cbsapp.server\\cbsapp.server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{98049338-197E-4791-B491-F9135F9D36E2}|CBSapp.Server\\CBSapp.Server.csproj|solutionrelative:cbsapp.server\\cbsapp.server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Controllers\\PingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CBSapp.Server\\Controllers\\PingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 199,
+          "SelectedChildIndex": 23,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "parcel.service.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\parcel.service.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\map\\Service\\parcel.service.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\parcel.service.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\map\\Service\\parcel.service.ts",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAgwAoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-27T16:40:53.664Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "map.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\map\\map.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\map\\map.ts",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-27T16:56:00.362Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "measurement.service.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\measurement.service.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\map\\Service\\measurement.service.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\measurement.service.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\map\\Service\\measurement.service.ts",
+              "ViewState": "AgIAACUAAAAAAAAAAAASwB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-29T14:08:40.049Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "draw.service.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\draw.service.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\map\\Service\\draw.service.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\draw.service.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\map\\Service\\draw.service.ts",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwFAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-27T15:52:54.693Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "map.spec.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.spec.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\map\\map.spec.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.spec.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\map\\map.spec.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-12-01T20:05:05.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.css",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\app.css",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.css",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-01T20:04:55.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app.html",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.html",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\app.html",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.html",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\app.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-01T20:04:44.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "app.spec.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.spec.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\app.spec.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.spec.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\app.spec.ts",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-12-01T20:04:34.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "main.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\main.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\main.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\main.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\main.ts",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAMwAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-12-01T20:04:24.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.example.json",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\appsettings.example.json",
+              "RelativeDocumentMoniker": "CBSapp.Server\\appsettings.example.json",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\appsettings.example.json",
+              "RelativeToolTip": "CBSapp.Server\\appsettings.example.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-01T19:58:48.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Program.cs",
+              "RelativeDocumentMoniker": "CBSapp.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Program.cs",
+              "RelativeToolTip": "CBSapp.Server\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:56:36.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\.gitignore",
+              "RelativeDocumentMoniker": "CBSapp.Server\\.gitignore",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\.gitignore",
+              "RelativeToolTip": "CBSapp.Server\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-12-01T19:51:19.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ebac7c74-3b95-5b1e-b483-338a08cbadf2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "CBSapp.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\appsettings.json",
+              "RelativeToolTip": "CBSapp.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-01T19:43:21.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "CBSapp.Server\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "CBSapp.Server\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:42:59.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\index.html",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\index.html",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\index.html",
+              "RelativeToolTip": "cbsapp.client\\src\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-01T19:13:24.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "map.css",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.css",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\map\\map.css",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.css",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\map\\map.css",
+              "ViewState": "AgIAADABAAAAAAAAAAAAADkBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-01T19:19:07.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appRouting.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\appRouting.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\appRouting.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\appRouting.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\appRouting.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-12-01T19:13:49.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MeasurementDto.cs",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\DTOs\\MeasurementDto.cs",
+              "RelativeDocumentMoniker": "CBSapp.Server\\DTOs\\MeasurementDto.cs",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\DTOs\\MeasurementDto.cs",
+              "RelativeToolTip": "CBSapp.Server\\DTOs\\MeasurementDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:27:36.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "app.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\app.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\app.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-12-01T19:13:35.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "map.html",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.html",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\map\\map.html",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\map.html",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\map\\map.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-01T18:18:03.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "map.service.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\map.service.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\map\\Service\\map.service.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\map\\Service\\map.service.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\map\\Service\\map.service.ts",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-12-01T17:46:32.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MeasurementsController.cs",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Controllers\\MeasurementsController.cs",
+              "RelativeDocumentMoniker": "CBSapp.Server\\Controllers\\MeasurementsController.cs",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Controllers\\MeasurementsController.cs",
+              "RelativeToolTip": "CBSapp.Server\\Controllers\\MeasurementsController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwC8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T17:30:38.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdaParsel.cs",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Models\\AdaParsel.cs",
+              "RelativeDocumentMoniker": "CBSapp.Server\\Models\\AdaParsel.cs",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Models\\AdaParsel.cs",
+              "RelativeToolTip": "CBSapp.Server\\Models\\AdaParsel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBIAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T17:30:32.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ParcelController.cs",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Controllers\\ParcelController.cs",
+              "RelativeDocumentMoniker": "CBSapp.Server\\Controllers\\ParcelController.cs",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Controllers\\ParcelController.cs",
+              "RelativeToolTip": "CBSapp.Server\\Controllers\\ParcelController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T17:30:30.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AdaParselEkleDto.cs",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\DTOs\\AdaParselEkleDto.cs",
+              "RelativeDocumentMoniker": "CBSapp.Server\\DTOs\\AdaParselEkleDto.cs",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\DTOs\\AdaParselEkleDto.cs",
+              "RelativeToolTip": "CBSapp.Server\\DTOs\\AdaParselEkleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T17:30:27.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CBSapp.Server",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\CBSapp.Server.csproj",
+              "RelativeDocumentMoniker": "CBSapp.Server\\CBSapp.Server.csproj",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\CBSapp.Server.csproj",
+              "RelativeToolTip": "CBSapp.Server\\CBSapp.Server.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-24T20:06:38.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "app-routing-module.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app-routing-module.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\app-routing-module.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app-routing-module.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\app-routing-module.ts",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-10-24T20:21:55.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "app-module.ts",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app-module.ts",
+              "RelativeDocumentMoniker": "cbsapp.client\\src\\app\\app-module.ts",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\cbsapp.client\\src\\app\\app-module.ts",
+              "RelativeToolTip": "cbsapp.client\\src\\app\\app-module.ts",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-10-24T19:40:38.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "spa.proxy.json",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\spa.proxy.json",
+              "RelativeDocumentMoniker": "CBSapp.Server\\spa.proxy.json",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\spa.proxy.json",
+              "RelativeToolTip": "CBSapp.Server\\spa.proxy.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-24T19:20:09.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PingController.cs",
+              "DocumentMoniker": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Controllers\\PingController.cs",
+              "RelativeDocumentMoniker": "CBSapp.Server\\Controllers\\PingController.cs",
+              "ToolTip": "C:\\Users\\KazimU\\source\\repos\\CBSapp\\CBSapp.Server\\Controllers\\PingController.cs",
+              "RelativeToolTip": "CBSapp.Server\\Controllers\\PingController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T19:39:20.435Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1924764005:0:{13143d73-808b-4a2f-bebb-ccbe9c93fe37}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 149,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
