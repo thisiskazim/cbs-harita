@@ -1,4 +1,4 @@
-// services/measurement.service.ts
+
 import { Injectable } from '@angular/core';
 import GeoJSON from 'ol/format/GeoJSON';
 import { MapInitService } from './map.service';
@@ -53,14 +53,14 @@ export class MeasurementService {
     try {
       const res = await fetch(`https://localhost:7013/api/measurements/${id}`, { method: 'DELETE' });
       if (res.ok) {
-        this.mapInit.vectorSource.removeFeature(feature);
-        const tumFeature = this.mapInit.vectorSource.getFeatures();
+        this.mapInit.getVectorSource().removeFeature(feature);
+        const tumFeature = this.mapInit.getVectorSource().getFeatures();
         const labelFeature = tumFeature.find(f =>
           f.get('label') === feature
         );
 
         if (labelFeature) {
-          this.mapInit.vectorSource.removeFeature(labelFeature);
+          this.mapInit.getVectorSource().removeFeature(labelFeature);
         }
         this.draw.cizimUzerindekiCircleTemizle();
       }
@@ -105,7 +105,7 @@ export class MeasurementService {
     try {
       const res = await fetch('https://localhost:7013/api/measurements');
       const data = await res.json();
-      this.mapInit.vectorSource.clear();
+      this.mapInit.getVectorSource().clear();
 
       data.forEach((item: any) => {
         const geomObj = JSON.parse(item.geom);
@@ -124,7 +124,7 @@ export class MeasurementService {
         const alan = props['alan_m2'];
 
         this.draw.olcumleriMetinOlarakEkle(feature, item.type, uzunluk, alan);
-        this.mapInit.vectorSource.addFeature(feature);
+        this.mapInit.getVectorSource().addFeature(feature);
       });
     } catch (err) {
       console.error('Yükleme hatası:', err);

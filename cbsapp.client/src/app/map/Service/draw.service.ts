@@ -9,7 +9,8 @@ import { MapInitService } from './map.service';
 import { Style, Stroke, Fill, Circle, Text } from 'ol/style';
 import Collection from 'ol/Collection';
 import { doubleClick, always } from 'ol/events/condition';
-@Injectable({ providedIn: 'root' })
+
+@Injectable({ providedIn: 'root' }) 
 export class DrawService {
   draw!: Draw;
   sekliDegitir: Modify | null = null;
@@ -20,18 +21,16 @@ export class DrawService {
   constructor(private mapInit: MapInitService) { }
 
 
-  islemSecBasla(type: 'point' | 'line' | 'area', parselModu: boolean = false) {
+  islemSecBasla(type: CizimTipi.Point | CizimTipi.Line | CizimTipi.Area, parselModu: boolean = false) {
     this.cizimUzerindekiCircleTemizle();
 
     if (this.draw) {
-      this.mapInit.map.removeInteraction(this.draw);
+      this.mapInit.getMap().removeInteraction(this.draw);
     }
 
-
-
     this.draw = new Draw({
-      source: this.mapInit.vectorSource,
-      type: type === 'point' ? 'Point' : type === 'line' ? 'LineString' : 'Polygon',
+      source: this.mapInit.getVectorSource(),
+      type: type === CizimTipi.Point ? 'Point' : type === CizimTipi.Line ? 'LineString' : 'Polygon',
       style: new Style({
         fill: new Fill({ color: 'rgba(255, 255, 0, 0.2)' }),
         stroke: new Stroke({ color: '#000', width: 2 }),
@@ -40,7 +39,7 @@ export class DrawService {
       })
     });
 
-    this.mapInit.map.addInteraction(this.draw);
+    this.mapInit.getMap().addInteraction(this.draw);
 
     //çizdikten sonra neler olacak burda topla
     this.draw.on('drawend', (evt) => {
@@ -48,8 +47,8 @@ export class DrawService {
       const geom = feature.getGeometry()!;
       feature.set('type', type);
 
-      const uzunluk = type === 'line' ? getLength(geom) : undefined;
-      const alan = type === 'area' ? getArea(geom) : undefined;
+      const uzunluk = type === CizimTipi.Line ? getLength(geom) : undefined;
+      const alan = type === CizimTipi.Area ? getArea(geom) : undefined;
 
 
       this.olcumleriMetinOlarakEkle(feature, type, uzunluk, alan);
@@ -57,11 +56,11 @@ export class DrawService {
       if (!parselModu) {
         this.olcumCizildi.emit({ feature, type });
       }
-      if (parselModu && type === 'area') {
+      if (parselModu && type === CizimTipi.Area) {
         this.parselCizildi.emit(feature);
       }
 
-      this.mapInit.map.removeInteraction(this.draw);
+      this.mapInit.getMap().removeInteraction(this.draw);
       this.draw = null as any;
 
 
@@ -71,9 +70,9 @@ export class DrawService {
 
   olcumleriMetinOlarakEkle(feature: Feature, type: string, uzunluk?: number, alan?: number) {
     let metin = '';
-    if (type === 'line' && uzunluk !== undefined) {
+    if (type === CizimTipi.Line && uzunluk !== undefined) {
       metin = `${uzunluk.toFixed(2)} m`;
-    } else if (type === 'area' && alan !== undefined) {
+    } else if (type === CizimTipi.Area && alan !== undefined) {
       metin = `${alan.toFixed(2)} m²`;
     }
     if (!metin) return;
@@ -92,13 +91,13 @@ export class DrawService {
         fill: new Fill({ color: '#000' }),
         backgroundFill: new Fill({ color: 'rgba(255,255,255,0.9)' }),
         padding: [3, 6, 3, 6],
-        offsetY: 0
+        offsetY: -15
       })
     }));
 
     this.labelFeature.set('label', feature);
 
-    this.mapInit.vectorSource.addFeature(this.labelFeature);  //labeli ekliyoruz kaç metre oluğunu görmek için
+    this.mapInit.getVectorSource().addFeature(this.labelFeature);  //labeli ekliyoruz kaç metre oluğunu görmek için
   }
 
   cizimUzerindekiCircle(feature: Feature) { //çizime tıkladığımızda çizgi üzerinde circle geliyor şekli değiştirmede yardımcı
@@ -112,13 +111,20 @@ export class DrawService {
         })
       })
     });
-    this.mapInit.map.addInteraction(this.sekliDegitir); //
+    this.mapInit.getMap().addInteraction(this.sekliDegitir); 
   }
 
   cizimUzerindekiCircleTemizle() { //circle yi kaldırıyor
     if (this.sekliDegitir) {
-      this.mapInit.map.removeInteraction(this.sekliDegitir);
+      this.mapInit.getMap().removeInteraction(this.sekliDegitir);
       this.sekliDegitir = null;
     }
   }
+}
+
+
+export enum CizimTipi {
+  Point = 'point',
+  Line = 'line',
+  Area = 'area'
 }

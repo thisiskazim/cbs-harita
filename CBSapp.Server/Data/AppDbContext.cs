@@ -1,8 +1,7 @@
 ﻿using CBSapp.Server.Models;
 using Microsoft.EntityFrameworkCore;
 using NetTopologySuite.Geometries;
-using Npgsql; // BU SATIR EKLENECEK!
-
+using Npgsql; 
 
 namespace CBSapp.Server.Data
 {

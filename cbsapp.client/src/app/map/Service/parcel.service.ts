@@ -1,4 +1,4 @@
-// services/parcel.service.ts
+
 import { Injectable } from '@angular/core';
 import Feature from 'ol/Feature';
 import { MapInitService } from './map.service';
@@ -17,12 +17,11 @@ export class ParcelService {
     constructor(private mapInit: MapInitService, private draw: DrawService, private snackBar: MatSnackBar) { }
 
     parselIptal(tempParcelFeature: Feature | null, labelFeature: Feature | null) {
-        if (tempParcelFeature && labelFeature) {
-            this.mapInit.vectorSource.removeFeature(tempParcelFeature);
-            this.mapInit.vectorSource.removeFeature(labelFeature);
+      if (tempParcelFeature && labelFeature) {
+        this.mapInit.getVectorSource().removeFeature(tempParcelFeature);
+        this.mapInit.getVectorSource().removeFeature(labelFeature);
         }
     }
-
 
     async parselKaydet(
         tempParcelFeature: Feature,
@@ -52,12 +51,7 @@ export class ParcelService {
 
             if (response.status === 409) {//eklenecek 
 
-                //this.snackBar.open(' Bu ada/parsel zaten kayıtlı!', 'Tamam', {
-                //  duration: 5000,
-                //  panelClass: ['red-snackbar'], 
-                //  horizontalPosition: 'center',
-                //  verticalPosition: 'bottom'
-                //});
+          
                 alert('Bu kayıt zaten var');
             }
             else if (response.ok) {
@@ -70,9 +64,9 @@ export class ParcelService {
                 //  verticalPosition: 'bottom'
                 //});
 
-                this.mapInit.vectorSource.removeFeature(tempParcelFeature);
-                if (labelFeature) {//kayıttan sonra labeli silelim
-                    this.mapInit.vectorSource.removeFeature(labelFeature);
+              this.mapInit.getVectorSource().removeFeature(tempParcelFeature);
+              if (labelFeature) {//kayıttan sonra labeli silelim
+                this.mapInit.getVectorSource().removeFeature(labelFeature);
                 }
 
                 parselPropertyleri.ada = '';
@@ -88,8 +82,8 @@ export class ParcelService {
     }
 
     async parselAra(parselPropertyleri: any) {
-        const { sehir, ilce, mahalle, ada, parsel } = parselPropertyleri;
-        this.mapInit.adaParselLayerSource.clear();
+      const { sehir, ilce, mahalle, ada, parsel } = parselPropertyleri;
+      this.mapInit.getAdaParselSource().clear();
 
         try {
             const url = `https://localhost:7013/api/parcel/search?sehir=${sehir}&ilce=${ilce}&mahalle=${mahalle}&ada=${ada}&parsel=${parsel}`;
@@ -122,11 +116,11 @@ export class ParcelService {
                 })
             );
 
-            this.mapInit.adaParselLayerSource.addFeature(feature);
+          this.mapInit.getAdaParselSource().addFeature(feature);
 
 
-            const extent = geometry.getExtent();
-            this.mapInit.map.getView().fit(extent, { duration: 1200, padding: [100, 100, 100, 100] });
+          const extent = geometry.getExtent();
+          this.mapInit.getMap().getView().fit(extent, { duration: 1200, padding: [100, 100, 100, 100] });
 
         } catch (err) {
             console.error(err);
@@ -142,8 +136,8 @@ export class ParcelService {
                 method: 'DELETE'
             });
 
-            if (res.ok) {
-                this.mapInit.adaParselLayerSource.clear();
+          if (res.ok) {
+            this.mapInit.getAdaParselSource().clear();
 
                 this.draw.cizimUzerindekiCircleTemizle();
                 alert('Parsel kalıcı olarak silindi');
@@ -154,6 +148,6 @@ export class ParcelService {
     }
 
 
-
+  
 
 }

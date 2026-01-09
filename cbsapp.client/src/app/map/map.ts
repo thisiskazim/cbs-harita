@@ -1,4 +1,4 @@
-// map.ts
+
 import Map from 'ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
@@ -18,10 +18,9 @@ import { getCenter } from 'ol/extent';
 import { Injectable, Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MapInitService } from './Service/map.service';
-import { DrawService } from './Service/draw.service';
+import { CizimTipi, DrawService } from './Service/draw.service';
 import { MeasurementService } from './Service/measurement.service';
 import { ParcelService } from './Service/parcel.service';
-
 import Polygon from 'ol/geom/Polygon';
 
 @Component({
@@ -41,7 +40,6 @@ export class MapComponent implements OnInit, AfterViewInit {
   parselFormGoster = false;
   tempParcelFeature: Feature<Polygon> | null = null;
   parselModu = false;
-
   parselPropertyleri = { sehir: '', ilce: '', mahalle: '', ada: '', parsel: '' };
 
   constructor(
@@ -68,13 +66,13 @@ export class MapComponent implements OnInit, AfterViewInit {
     this.mapInit.initMap(); // target artık otomatik 'map' div’i
 
     //çizim üzerinde seçim yaptığımızda
-    this.mapInit.select.on('select', (e) => {
+    this.mapInit.getSecimEtkilesimi().on('select', (e) => {
       const selected = e.selected[0];
       this.selectedFeature = selected || null;
       this.selectedId = this.selectedFeature?.get('id') ?? null;
 
       // Sadece seçilen şey bir ölçüm veya parsel ise modify açılsın
-      if (selected && (selected.get('type') === 'line' || selected.get('type') === 'area')) {
+      if (selected && (selected.get('type') === CizimTipi.Line || selected.get('type') === CizimTipi.Area)) {
         this.draw.cizimUzerindekiCircle(selected);
 
         // cizimi değiştirdiğinde ne yapacak güncelleyecek ama parsel güncelleme yok !!!
@@ -92,14 +90,15 @@ export class MapComponent implements OnInit, AfterViewInit {
 
   }
 
+
   // Butonlar
-  alanOlcmeBasla() { this.draw.islemSecBasla('area'); }
-  uzunlukOlcmeBasla() { this.draw.islemSecBasla('line'); }
-  isaretlemeYapBasla() { this.draw.islemSecBasla('point'); }
+  alanOlcmeBasla() { this.draw.islemSecBasla(CizimTipi.Area); }
+  uzunlukOlcmeBasla() { this.draw.islemSecBasla(CizimTipi.Line); }
+  isaretlemeYapBasla() { this.draw.islemSecBasla(CizimTipi.Point); }
   parselEklemeBasla() {
-    this.parselModu = true; this.draw.islemSecBasla('area', true);
+    this.parselModu = true; this.draw.islemSecBasla(CizimTipi.Area, true);
   }
-  sil() {
+  sil() {//percel ve çizim sil 
     if (!this.selectedFeature) {
       return;
     }
@@ -107,10 +106,10 @@ export class MapComponent implements OnInit, AfterViewInit {
     const id = this.selectedFeature.get('id');
 
     //ölçüm sil
-    if (type === 'area' || type === 'line' || type === 'point') {
+    if (type === CizimTipi.Area || type === CizimTipi.Line || type === CizimTipi.Point) {
       {
         if (this.draw.labelFeature) {
-          this.mapInit.vectorSource.removeFeature(this.draw.labelFeature);
+          this.mapInit.getVectorSource().removeFeature(this.draw.labelFeature);
         }
         this.measurement.sil(id, this.selectedFeature);
         this.selectedFeature = null;
@@ -121,12 +120,12 @@ export class MapComponent implements OnInit, AfterViewInit {
     }
 
     //Parsel sil
-    const parselFeatures = this.mapInit.adaParselLayerSource.getFeatures();
+    const parselFeatures = this.mapInit.getAdaParselSource().getFeatures();
     const buParselMi = parselFeatures.some(f => f === this.selectedFeature);
 
     if (buParselMi) {
       if (this.draw.labelFeature) {
-        this.mapInit.vectorSource.removeFeature(this.draw.labelFeature);
+        this.mapInit.getVectorSource().removeFeature(this.draw.labelFeature);
       }
       this.parcel.sil(id);
       this.selectedFeature = null;
@@ -137,7 +136,6 @@ export class MapComponent implements OnInit, AfterViewInit {
 
 
   }
-
 
   parselIptal() {
     this.parselFormGoster = false;
@@ -162,5 +160,20 @@ export class MapComponent implements OnInit, AfterViewInit {
   async parselAra() {
     await this.parcel.parselAra(this.parselPropertyleri);
   }
+
+
+  //uydu ve sokak haritası opaklık ayarı 
+  haritaOpaklikOrani = 0; 
+
+  haritaOpakligiAyar() {
+    const osmOpakligi = this.haritaOpaklikOrani / 100;
+    const uyduOpakligi = 1 - osmOpakligi;
+
+    this.mapInit.getUyduLayer().setOpacity(uyduOpakligi);
+    this.mapInit.getSokakLayer().setOpacity(osmOpakligi);
+  }
+
+
+
 
 }

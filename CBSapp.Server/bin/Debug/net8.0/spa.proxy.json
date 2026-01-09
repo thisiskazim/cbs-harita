@@ -1,8 +1,0 @@
-{
-  "SpaProxyServer": "http://localhost:4200",
-  "LaunchCommand": "npm start",
-  "WorkingDirectory": "../cbsapp.client",
-  "MaxTimeoutInSeconds": "120"
-}
-
-
