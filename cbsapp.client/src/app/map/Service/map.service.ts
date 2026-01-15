@@ -37,8 +37,6 @@ export class MapInitService {
     this.vectorAdaParselLayerOlustur();
     this.sokakUyduLayerOlustur();
     this.mapOlustur();
-   
-    
     this.secimEtkilesimi();
 }
 

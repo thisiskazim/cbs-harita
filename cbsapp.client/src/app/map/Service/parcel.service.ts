@@ -120,7 +120,7 @@ export class ParcelService {
 
 
           const extent = geometry.getExtent();
-          this.mapInit.getMap().getView().fit(extent, { duration: 1200, padding: [100, 100, 100, 100] });
+        //  this.mapInit.getMap().getView().fit(extent, { duration: 1200, padding: [100, 100, 100, 100] });
 
         } catch (err) {
             console.error(err);

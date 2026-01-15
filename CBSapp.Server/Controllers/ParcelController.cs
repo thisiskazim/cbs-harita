@@ -23,13 +23,13 @@ namespace CBSapp.Server.Controllers
             var geom = reader.Read(dto.Wkt) as Polygon;
 
 
-            var mevcutParselVarmi = await _context.Parcels
+            var mevcutParselVarmi = await _context.AdaParsels.Include(p=>p.Address)
                 .FirstOrDefaultAsync(p =>
                     p.Ada == dto.Ada &&
                     p.Parsel == dto.Parsel &&
-                    p.Mahalle == dto.Mahalle &&
-                    p.Ilce == dto.Ilce &&
-                    p.Sehir == dto.Sehir
+                    p.Address.Mahalle == dto.AddressDto.Mahalle &&
+                    p.Address.Ilce == dto.AddressDto.Ilce &&
+                    p.Address.Sehir == dto.AddressDto.Sehir
                 );
 
             if (mevcutParselVarmi != null)
@@ -37,17 +37,37 @@ namespace CBSapp.Server.Controllers
                 return Conflict("Bu ada/parsel zaten kayıtlı");
             }
 
+            var adres = await _context.Addresses
+                .FirstOrDefaultAsync(a =>
+                    a.Sehir == dto.AddressDto.Sehir &&
+                    a.Ilce == dto.AddressDto.Ilce &&
+                    a.Mahalle == dto.AddressDto.Mahalle
+                );
+
+            if (adres == null)
+            {
+           
+                adres = new Address()
+                {
+                    Sehir = dto.AddressDto.Sehir,
+                    Ilce = dto.AddressDto.Ilce,
+                    Mahalle = dto.AddressDto.Mahalle
+                };
+                _context.Addresses.Add(adres);
+                await _context.SaveChangesAsync(); 
+            }
+
+           
             var parcel = new AdaParsel
             {
-                Sehir = dto.Sehir,
-                Ilce = dto.Ilce,
-                Mahalle = dto.Mahalle,
+                AddressId = adres.Id,
                 Ada = dto.Ada,
                 Parsel = dto.Parsel,
-                Geom = geom
+                Geom = geom,
+               
             };
 
-            _context.Parcels.Add(parcel);
+            _context.AdaParsels.Add(parcel);
             await _context.SaveChangesAsync();
 
             return Ok(new { parcel.Id });
@@ -64,15 +84,17 @@ namespace CBSapp.Server.Controllers
             [FromQuery] string ada,
             [FromQuery] string parsel)
         {
-            var query = _context.Parcels.AsQueryable();
+            var sorgu = _context.AdaParsels
+                .Include(p => p.Address)          
+                .AsQueryable();
 
-            if (!string.IsNullOrEmpty(sehir)) query = query.Where(p => p.Sehir == sehir);
-            if (!string.IsNullOrEmpty(ilce)) query = query.Where(p => p.Ilce == ilce);
-            if (!string.IsNullOrEmpty(mahalle)) query = query.Where(p => p.Mahalle == mahalle);
-            if (!string.IsNullOrEmpty(ada)) query = query.Where(p => p.Ada == ada);
-            if (!string.IsNullOrEmpty(parsel)) query = query.Where(p => p.Parsel == parsel);
+            if (!string.IsNullOrEmpty(sehir)) sorgu = sorgu.Where(p => p.Address.Sehir == sehir);
+            if (!string.IsNullOrEmpty(ilce)) sorgu = sorgu.Where(p => p.Address.Ilce == ilce);
+            if (!string.IsNullOrEmpty(mahalle)) sorgu = sorgu.Where(p => p.Address.Mahalle == mahalle);
+            if (!string.IsNullOrEmpty(ada)) sorgu = sorgu.Where(p => p.Ada == ada);
+            if (!string.IsNullOrEmpty(parsel)) sorgu = sorgu.Where(p => p.Parsel == parsel);
 
-            var parcel = await query.FirstOrDefaultAsync();
+            var parcel = await sorgu.FirstOrDefaultAsync();
             if (parcel == null) 
                 return NotFound();
 
@@ -82,7 +104,13 @@ namespace CBSapp.Server.Controllers
             var result = new
             {
                 id = parcel.Id,
-                wkt = wktWriter.Write(parcel.Geom) ?? ""
+                wkt = wktWriter.Write(parcel.Geom) ?? "",
+                ada = parcel.Ada,
+                parsel = parcel.Parsel,
+                sehir = parcel.Address.Sehir,
+                ilce = parcel.Address.Ilce,
+                mahalle = parcel.Address.Mahalle
+
             };
 
             return Ok(result);
@@ -91,11 +119,11 @@ namespace CBSapp.Server.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var entity = await _context.Parcels.FindAsync(id);
+            var entity = await _context.AdaParsels.FindAsync(id);
             if (entity == null)
                 return NotFound();
 
-            _context.Parcels.Remove(entity);
+            _context.AdaParsels.Remove(entity);
             await _context.SaveChangesAsync();
 
             return Ok(new { id });

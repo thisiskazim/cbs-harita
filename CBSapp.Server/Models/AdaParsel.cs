@@ -9,11 +9,11 @@ namespace CBSapp.Server.Models
         [Key]
         public int Id { get; set; }
 
-        public string Sehir { get; set; } = string.Empty;
-        public string Ilce { get; set; } = string.Empty;
-        public string Mahalle { get; set; } = string.Empty;
-        public string Ada { get; set; } = string.Empty;
-        public string Parsel { get; set; } = string.Empty;
+        public Address Address { get; set; }
+        public int AddressId { get; set; }
+
+        public string Ada { get; set; } //0 ile başlayabilecği için string
+        public string Parsel { get; set; } 
 
         [Column("geom")]
         public Polygon Geom { get; set; } = null!;  //multipolygon da kullanabiliriz fakat ihtiyaç yok
