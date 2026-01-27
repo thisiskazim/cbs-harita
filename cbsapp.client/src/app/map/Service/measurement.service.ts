@@ -52,18 +52,21 @@ export class MeasurementService {
     if (!id || !feature) return;
     try {
       const res = await fetch(`https://localhost:7013/api/measurements/${id}`, { method: 'DELETE' });
-      if (res.ok) {
-        this.mapInit.getVectorSource().removeFeature(feature);
-        const tumFeature = this.mapInit.getVectorSource().getFeatures();
-        const labelFeature = tumFeature.find(f =>
-          f.get('label') === feature
-        );
+      if (!res.ok) {
+        throw new Error(res.statusText)
+      }
 
-        if (labelFeature) {
-          this.mapInit.getVectorSource().removeFeature(labelFeature);
+      const source = this.mapInit.getVectorSource();
+
+      source.removeFeature(feature);
+      const tumFeature = source.getFeatures();
+      const labelFeature = tumFeature.find(f => f.get('label') === feature);
+
+      if (labelFeature) {
+        source.removeFeature(labelFeature);
         }
         this.draw.cizimUzerindekiCircleTemizle();
-      }
+      
     } catch (err) {
       console.error('Silme hatası:', err);
     }
@@ -122,7 +125,7 @@ export class MeasurementService {
         const props = JSON.parse(item.properties || '{}');
         const uzunluk = props['uzunluk_m'];
         const alan = props['alan_m2'];
-
+        this.draw.cizimUzerindekiCircleTemizle();
         this.draw.olcumleriMetinOlarakEkle(feature, item.type, uzunluk, alan);
         this.mapInit.getVectorSource().addFeature(feature);
       });

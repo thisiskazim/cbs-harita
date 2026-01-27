@@ -14,7 +14,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
     providedIn: 'root'
 })
 export class ParcelService {
-    constructor(private mapInit: MapInitService, private draw: DrawService, private snackBar: MatSnackBar) { }
+    constructor(private mapInit: MapInitService, private draw: DrawService) { }
 
     parselIptal(tempParcelFeature: Feature | null, labelFeature: Feature | null) {
       if (tempParcelFeature && labelFeature) {
@@ -50,21 +50,11 @@ export class ParcelService {
             });
 
             if (response.status === 409) {//eklenecek 
-
-          
                 alert('Bu kayıt zaten var');
             }
             else if (response.ok) {
-                //bunları ekleyecem
-
-                //  this.snackBar.open(' Parsel başarıyla kaydedildi!', 'Harika', {
-                //  duration: 4000,
-                //  panelClass: ['green-snackbar'],
-                //  horizontalPosition: 'center',
-                //  verticalPosition: 'bottom'
-                //});
-
               this.mapInit.getVectorSource().removeFeature(tempParcelFeature);
+
               if (labelFeature) {//kayıttan sonra labeli silelim
                 this.mapInit.getVectorSource().removeFeature(labelFeature);
                 }
@@ -132,16 +122,18 @@ export class ParcelService {
         if (!parselId) return;
 
         try {
-            const res = await fetch(`https://localhost:7013/api/parcel/${parselId}`, {
-                method: 'DELETE'
-            });
+           const res = await fetch(`https://localhost:7013/api/parcel/${parselId}`, {method: 'DELETE'});
 
+          if (this.draw.labelFeature) {
+            this.mapInit.getVectorSource().removeFeature(this.draw.labelFeature);
+          }
+  
           if (res.ok) {
-            this.mapInit.getAdaParselSource().clear();
+             this.mapInit.getAdaParselSource().clear();
+             this.draw.cizimUzerindekiCircleTemizle();
+             alert('Parsel kalıcı olarak silindi');
+          }
 
-                this.draw.cizimUzerindekiCircleTemizle();
-                alert('Parsel kalıcı olarak silindi');
-            }
         } catch (err) {
             console.error(err);
         }

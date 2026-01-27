@@ -71,7 +71,7 @@ export class MapComponent implements OnInit, AfterViewInit {
       this.selectedFeature = selected || null;
       this.selectedId = this.selectedFeature?.get('id') ?? null;
 
-      // Sadece seçilen şey bir ölçüm veya parsel ise modify açılsın
+      // Sadece seçilen şey bir ölçüm ise modify açılsın
       if (selected && (selected.get('type') === CizimTipi.Line || selected.get('type') === CizimTipi.Area)) {
         this.draw.cizimUzerindekiCircle(selected);
 
@@ -91,6 +91,7 @@ export class MapComponent implements OnInit, AfterViewInit {
   }
 
 
+  
   // Butonlar
   alanOlcmeBasla() { this.draw.islemSecBasla(CizimTipi.Area); }
   uzunlukOlcmeBasla() { this.draw.islemSecBasla(CizimTipi.Line); }
@@ -108,13 +109,9 @@ export class MapComponent implements OnInit, AfterViewInit {
     //ölçüm sil
     if (type === CizimTipi.Area || type === CizimTipi.Line || type === CizimTipi.Point) {
       {
-        if (this.draw.labelFeature) {
-          this.mapInit.getVectorSource().removeFeature(this.draw.labelFeature);
-        }
         this.measurement.sil(id, this.selectedFeature);
         this.selectedFeature = null;
         this.selectedId = null;
-
       }
       return;
     }
@@ -124,9 +121,7 @@ export class MapComponent implements OnInit, AfterViewInit {
     const buParselMi = parselFeatures.some(f => f === this.selectedFeature);
 
     if (buParselMi) {
-      if (this.draw.labelFeature) {
-        this.mapInit.getVectorSource().removeFeature(this.draw.labelFeature);
-      }
+     
       this.parcel.sil(id);
       this.selectedFeature = null;
       this.selectedId = null;

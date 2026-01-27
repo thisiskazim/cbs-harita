@@ -84,16 +84,30 @@ export class DrawService {
       geometry: new Point(center)
     });
 
-    this.labelFeature.setStyle(new Style({
-      text: new Text({
-        text: metin,
-        font: '14px Calibri,sans-serif',
-        fill: new Fill({ color: '#000' }),
-        backgroundFill: new Fill({ color: 'rgba(255,255,255,0.9)' }),
-        padding: [3, 6, 3, 6],
-        offsetY: -15
-      })
-    }));
+
+    this.labelFeature.setStyle((feat, resolution) => {
+
+      const metniGostermekIcinEsikDegeri = 3;
+
+      let textStyle: Text | undefined = undefined;
+
+      if (resolution <= metniGostermekIcinEsikDegeri) {
+        textStyle = new Text({
+          text: metin,
+          font: '14px Calibri,sans-serif',
+          fill: new Fill({ color: '#000' }),
+          backgroundFill: new Fill({ color: 'rgba(255,255,255,0.9)' }),
+          padding: [3, 6, 3, 6],
+          offsetY: -15
+        })
+
+      }
+
+      return new Style({
+        text: textStyle
+      });
+
+    });
 
     this.labelFeature.set('label', feature);
 
