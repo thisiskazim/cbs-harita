@@ -1,6 +1,6 @@
 
 
-using CBSapp.Server.Data;
+using CBSapp.INFRASTRUCTURE.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

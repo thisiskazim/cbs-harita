@@ -1,7 +1,7 @@
 ﻿using NetTopologySuite.Geometries;
 
 
-namespace CBSapp.Server.Models
+namespace CBSapp.DOMAIN.Entities
 {
     public class MeasurementEntity
     {

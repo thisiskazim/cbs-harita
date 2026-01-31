@@ -39,13 +39,16 @@ export class ParcelService {
             const response = await fetch('https://localhost:7013/api/parcel', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    sehir: parselPropertyleri.sehir,
-                    ilce: parselPropertyleri.ilce,
-                    mahalle: parselPropertyleri.mahalle,
-                    ada: parselPropertyleri.ada,
-                    parsel: parselPropertyleri.parsel,
-                    wkt: wkt
+              body: JSON.stringify({
+
+                ada: parselPropertyleri.ada,
+                parsel: parselPropertyleri.parsel,
+                wkt: wkt,
+                AddressDto: {
+                  sehir: parselPropertyleri.sehir,
+                  ilce: parselPropertyleri.ilce,
+                  mahalle: parselPropertyleri.mahalle,
+                }
                 })
             });
 
@@ -110,7 +113,7 @@ export class ParcelService {
 
 
           const extent = geometry.getExtent();
-        //  this.mapInit.getMap().getView().fit(extent, { duration: 1200, padding: [100, 100, 100, 100] });
+          this.mapInit.getMap().getView().fit(extent, { duration: 1200, padding: [100, 100, 100, 100] });
 
         } catch (err) {
             console.error(err);

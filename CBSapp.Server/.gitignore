@@ -6,3 +6,25 @@ appsettings.Production.json
 *.user
 *.sln.docstates
 *.cache
+
+
+# .NET Build / output
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.vs/
+*.sln.docstates
+
+# Diðer yaygýn ignore'lar
+*.dll
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+*.nupkg

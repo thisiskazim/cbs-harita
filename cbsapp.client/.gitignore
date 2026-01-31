@@ -47,3 +47,25 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+
+# .NET Build / output
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.vs/
+*.sln.docstates
+
+# Diğer yaygın ignore'lar
+*.dll
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+*.nupkg

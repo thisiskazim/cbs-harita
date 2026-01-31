@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using CBSapp.Server.Data;
+
 using CBSapp.Server.DTOs;
-using CBSapp.Server.Models;
+using CBSapp.DOMAIN.Entities;
+using CBSapp.INFRASTRUCTURE.Persistence;
 using NetTopologySuite.Geometries;
 using NetTopologySuite.IO; // BURAYA DİKKAT!
 using Microsoft.EntityFrameworkCore;

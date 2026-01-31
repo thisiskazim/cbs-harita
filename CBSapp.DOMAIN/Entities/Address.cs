@@ -1,4 +1,4 @@
-﻿namespace CBSapp.Server.Models
+﻿namespace CBSapp.DOMAIN.Entities
 {
     public class Address
     {

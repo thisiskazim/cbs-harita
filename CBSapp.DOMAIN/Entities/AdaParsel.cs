@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace CBSapp.Server.Models
+namespace CBSapp.DOMAIN.Entities
 {
     public class AdaParsel
     {

@@ -6,3 +6,50 @@
 CBSapp.Server/bin/
 CBSapp.Server/obj
 CBSapp/.vs
+
+# .NET Build / output
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# Diğer yaygın ignore'lar
+*.dll
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+*.nupkg
+
+
+# Visual Studio
+.vs/
+*.v2
+*.suo
+*.user
+*.wsuo
+*.sln.docstates
+DocumentLayout.json
+DocumentLayout.backup.json
+
+# DesignTimeBuild & cache
+.dtbcache.v2/
+.futdcache.v2/
+
+# Project Evaluation cache
+ProjectEvaluation/
+*.v9.bin
+slnx.sqlite
+VSWorkspaceState.json
+
+/.vs/CBSapp/v17/.wsuo
+/.vs/CBSapp/DesignTimeBuild/.dtbcache.v2
+/.vs/CBSapp/v17/.futdcache.v2
+/.vs/CBSapp/v17/.suo
+/.vs/CBSapp/v17/DocumentLayout.backup.json
+/.vs/CBSapp/v17/DocumentLayout.json
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/.vs/ProjectEvaluation/cbsapp.metadata.v9.bin
+/.vs/ProjectEvaluation/cbsapp.projects.v9.bin
+/.vs/ProjectEvaluation/cbsapp.strings.v9.bin
+/.vs/CBSapp/DesignTimeBuild/.dtbcache.v2
